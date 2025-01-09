@@ -20,5 +20,7 @@
  follow the steps in this tutorial: [piper model training ](https://github.com/rhasspy/piper/blob/master/TRAINING.md)
 
 
-The generated voice is on the button, and the original sample is on top.
+# comparison
+ origianl voice top
+ generated voice bottom
 ![Comparison in audiocity](./mostlythesame.png)
