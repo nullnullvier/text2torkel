@@ -1,0 +1,80 @@
+#root {
+  max-width: 1280px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-color: #343699;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 22px;
+}
+
+textarea {
+  resize: none;
+  background-color: #000;
+  border-color: #000;
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin-top: 10px
+}
+
+button {
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: #f8b34d;
+  margin-top: 20px;
+}
+
+button:hover, button:active {
+  background-color: #fff;
+}
+
+.preferable {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+}
+
+.description {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  max-width: 550px;
+  width: 100%;
+  font-size: 14px;
+}
+.description i {
+  font-size: 12px;
+}
+.tips {
+  display: none;
+}
+.tips:target {
+  display: block;
+}
+.description a, .description a:visited {
+  color: #f8b34d;
+  font-weight: bold;
+}
+.description a:hover, .description a:focus {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+  textarea {
+    max-width: calc(100% - 1rem);
+  }
+}
