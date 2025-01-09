@@ -40,7 +40,6 @@ def handle_mention(status) -> None:
         #send to the text2speech api
         response = requests.get(server_url, params = {"text": content})
         logging.info("response http code: " + str(response.status_code))
-        #bot_path = "/home/capcom/uni/text2torkel/bot/wav/"
         #file_path: str =  response.content
         logging.info(response.content.decode("utf-8").strip().replace('"', ''))
         path_to_wav = os.path.abspath(response.content.decode("utf-8").strip().replace('"', ''))
